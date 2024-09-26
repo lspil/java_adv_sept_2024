@@ -15,9 +15,9 @@ public class Order {
 
     public double calculateOrder() {
         if (quantity > 100) {
-            discount = 0.20; // magic number
+            discount = 0.20;
         } else if (quantity > 50) {
-            discount = 0.10; // magic number
+            discount = 0.10;
         }
         double totalPrice = (pricePerItem * quantity) - (pricePerItem * quantity * discount);
         return totalPrice;
